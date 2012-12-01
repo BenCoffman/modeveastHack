@@ -7,8 +7,12 @@
 //
 
 #import "TGWFirstViewController.h"
+#import "ToutHashtagService.h"
+#import "Constants.h"
 
 @interface TGWFirstViewController ()
+
+@property(nonatomic,copy) NSArray *touts;
 
 @end
 
@@ -18,6 +22,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+      
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning

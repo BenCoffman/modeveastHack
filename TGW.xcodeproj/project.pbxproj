@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA36D76A166A82B000D4FA10 /* ToutHashtagService.m in Sources */ = {isa = PBXBuildFile; fileRef = EA36D769166A82B000D4FA10 /* ToutHashtagService.m */; };
+		EA36D76E166A8F0600D4FA10 /* Tout.m in Sources */ = {isa = PBXBuildFile; fileRef = EA36D76D166A8F0600D4FA10 /* Tout.m */; };
+		EA36D771166AA1D700D4FA10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = EA36D770166AA1D700D4FA10 /* Constants.m */; };
+		EA36D774166AA4FD00D4FA10 /* TimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA36D773166AA4FD00D4FA10 /* TimelineViewController.m */; };
+		EA36D777166AA7ED00D4FA10 /* ToutHourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA36D776166AA7ED00D4FA10 /* ToutHourCell.m */; };
 		FE7C8265166A6EB2004424C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7C8264166A6EB2004424C3 /* UIKit.framework */; };
 		FE7C8267166A6EB2004424C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7C8266166A6EB2004424C3 /* Foundation.framework */; };
 		FE7C8269166A6EB2004424C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7C8268166A6EB2004424C3 /* CoreGraphics.framework */; };
@@ -26,6 +31,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA36D768166A82B000D4FA10 /* ToutHashtagService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToutHashtagService.h; path = ../ToutHashtagService.h; sourceTree = "<group>"; };
+		EA36D769166A82B000D4FA10 /* ToutHashtagService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToutHashtagService.m; path = ../ToutHashtagService.m; sourceTree = "<group>"; };
+		EA36D76C166A8F0600D4FA10 /* Tout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tout.h; sourceTree = "<group>"; };
+		EA36D76D166A8F0600D4FA10 /* Tout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tout.m; sourceTree = "<group>"; };
+		EA36D76F166AA1D700D4FA10 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		EA36D770166AA1D700D4FA10 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		EA36D772166AA4FD00D4FA10 /* TimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineViewController.h; sourceTree = "<group>"; };
+		EA36D773166AA4FD00D4FA10 /* TimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineViewController.m; sourceTree = "<group>"; };
+		EA36D775166AA7ED00D4FA10 /* ToutHourCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToutHourCell.h; sourceTree = "<group>"; };
+		EA36D776166AA7ED00D4FA10 /* ToutHourCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToutHourCell.m; sourceTree = "<group>"; };
 		FE7C8260166A6EB2004424C3 /* TGW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7C8264166A6EB2004424C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FE7C8266166A6EB2004424C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +109,8 @@
 		FE7C826A166A6EB2004424C3 /* TGW */ = {
 			isa = PBXGroup;
 			children = (
+				EA36D768166A82B000D4FA10 /* ToutHashtagService.h */,
+				EA36D769166A82B000D4FA10 /* ToutHashtagService.m */,
 				FE7C8292166A6F00004424C3 /* Images */,
 				FE7C8273166A6EB2004424C3 /* TGWAppDelegate.h */,
 				FE7C8274166A6EB2004424C3 /* TGWAppDelegate.m */,
@@ -103,6 +120,14 @@
 				FE7C8286166A6EB2004424C3 /* TGWSecondViewController.h */,
 				FE7C8287166A6EB2004424C3 /* TGWSecondViewController.m */,
 				FE7C826B166A6EB2004424C3 /* Supporting Files */,
+				EA36D76C166A8F0600D4FA10 /* Tout.h */,
+				EA36D76D166A8F0600D4FA10 /* Tout.m */,
+				EA36D76F166AA1D700D4FA10 /* Constants.h */,
+				EA36D770166AA1D700D4FA10 /* Constants.m */,
+				EA36D772166AA4FD00D4FA10 /* TimelineViewController.h */,
+				EA36D773166AA4FD00D4FA10 /* TimelineViewController.m */,
+				EA36D775166AA7ED00D4FA10 /* ToutHourCell.h */,
+				EA36D776166AA7ED00D4FA10 /* ToutHourCell.m */,
 			);
 			path = TGW;
 			sourceTree = "<group>";
@@ -207,6 +232,11 @@
 				FE7C8275166A6EB2004424C3 /* TGWAppDelegate.m in Sources */,
 				FE7C8281166A6EB2004424C3 /* TGWFirstViewController.m in Sources */,
 				FE7C8288166A6EB2004424C3 /* TGWSecondViewController.m in Sources */,
+				EA36D76A166A82B000D4FA10 /* ToutHashtagService.m in Sources */,
+				EA36D76E166A8F0600D4FA10 /* Tout.m in Sources */,
+				EA36D771166AA1D700D4FA10 /* Constants.m in Sources */,
+				EA36D774166AA4FD00D4FA10 /* TimelineViewController.m in Sources */,
+				EA36D777166AA7ED00D4FA10 /* ToutHourCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +353,7 @@
 				FE7C8291166A6EB2004424C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
