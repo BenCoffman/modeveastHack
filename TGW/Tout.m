@@ -63,9 +63,9 @@
                                               returningResponse:nil
                                                           error:nil];
     
-    tout.thumbnail = [UIImage imageWithData:thumbData scale:1.0];
-    NSLog(@"Recorded at %@",tout.recordedDate);
-    NSLog(@"Hour bucket: %@",[tout hourBucket]);
+    tout.thumbnail = [UIImage imageWithData:thumbData scale:2.0];
+    //NSLog(@"Recorded at %@",tout.recordedDate);
+    //NSLog(@"Hour bucket: %@",[tout hourBucket]);
 
     
     return tout;

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface TGWSecondViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+
+- (IBAction)webViewBackbtn:(id)sender;
 
 @end

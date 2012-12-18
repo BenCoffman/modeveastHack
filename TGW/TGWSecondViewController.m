@@ -13,11 +13,16 @@
 @end
 
 @implementation TGWSecondViewController
+@synthesize webView = _webView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dl.dropbox.com/u/79429/hackathon/tout.html"]]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)webViewBackbtn:(id)sender {
+    [self.webView goBack];
+}
 @end

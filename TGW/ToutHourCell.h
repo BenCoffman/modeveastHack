@@ -11,4 +11,11 @@
 @interface ToutHourCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *labelHour;
 
+@property (nonatomic,strong) NSMutableArray *thumbs;
+@property (nonatomic, strong) NSMutableArray *thumbViews;
+
+-(void)addThumb:(UIImage*)thumb;
+
+-(void)resetThumbs;
+
 @end
