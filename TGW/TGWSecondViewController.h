@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TGWSecondViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@interface TGWSecondViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (IBAction)takeVideo:(id)sender;
 
-
-- (IBAction)webViewBackbtn:(id)sender;
 
 @end

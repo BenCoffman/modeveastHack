@@ -9,3 +9,5 @@
 #import <Foundation/Foundation.h>
 
 extern NSString * const kNoteToutsAreIn;
+extern NSString * const kUrl;
+extern NSString * const kAPIToken;
