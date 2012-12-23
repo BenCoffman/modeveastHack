@@ -17,7 +17,7 @@
 	if(self){
         self.description = ttl;
         _coordinate  = c2d;
-        return self;
     }
+    return self;
 }
 @end
