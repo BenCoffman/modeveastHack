@@ -39,13 +39,10 @@
     
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 20000, 20000);
     TGWPartySpot *newAnnotation = [[TGWPartySpot alloc] initWithTitle:@"Hack This" andCoordinate:partyLocation];
+    
 	[self.mapView addAnnotation:newAnnotation];
     
-    
-    [self.mapView setRegion:viewRegion animated:YES];
-    
-    
-
+    [self.mapView setRegion:viewRegion animated:NO];
 }
 - (void)viewDidLoad
 {
@@ -58,6 +55,47 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - MapView Delegates
+- (MKAnnotationView *)mapView:(MKMapView *)aMapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    
+    static NSString *identifier = @"MyLocation";
+    
+    
+    if ([annotation isKindOfClass:[TGWPartySpot class]]) {
+        MKPinAnnotationView *pinAnn      = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        
+        if (pinAnn == nil) {
+            pinAnn = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        } else {
+            pinAnn.annotation = annotation;
+        }
+        
+        pinAnn.enabled                   = YES;
+        pinAnn.canShowCallout            = YES;
+        pinAnn.pinColor                  = MKPinAnnotationColorGreen;
+        pinAnn.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        
+        return pinAnn;
+    }
+    return nil;
+}
+
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views{
+    
+}
+
+-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
+calloutAccessoryControlTapped:(UIControl *)control
+{
+    
+    TGWPartySpot *ann = (TGWPartySpot *)view.annotation;
+    
+    if (control == view.rightCalloutAccessoryView)
+    {
+        
+    }
 }
 
 @end

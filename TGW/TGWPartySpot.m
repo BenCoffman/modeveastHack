@@ -9,15 +9,21 @@
 #import "TGWPartySpot.h"
 
 @implementation TGWPartySpot
-@synthesize coordinate   = _coordinate;
-@synthesize description  = _description;
+@synthesize coordinate          = _coordinate;
+@synthesize partyTitleName      = _partyTitleName;
+@synthesize partySubtitleName   = _partySubtitleName;
 
 - (id)initWithTitle:(NSString *)ttl andCoordinate:(CLLocationCoordinate2D)c2d {
 	self = [super init];
 	if(self){
-        self.description = ttl;
+        _partyTitleName = ttl;
         _coordinate  = c2d;
     }
     return self;
 }
+
+- (NSString *)title {
+    return self.partyTitleName;
+}
+
 @end

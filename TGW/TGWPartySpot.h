@@ -12,7 +12,8 @@
 @interface TGWPartySpot : NSObject <MKAnnotation>
 
 @property (assign, nonatomic) CLLocationCoordinate2D cord;
-@property (copy, nonatomic)   NSString               *description;
+@property (copy, nonatomic)   NSString               *partyTitleName;
+@property (copy, nonatomic)   NSString               *partySubtitleName;
 
 - (id)initWithTitle:(NSString *)ttl andCoordinate:(CLLocationCoordinate2D)c2d;
 
