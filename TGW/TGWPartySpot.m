@@ -26,4 +26,9 @@
     return self.partyTitleName;
 }
 
+// currently nil, in here if needed.
+- (NSString *)subtitle{
+    return self.partySubtitleName;
+}
+
 @end

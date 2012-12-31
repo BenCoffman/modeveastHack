@@ -41,7 +41,6 @@
 		FE7C8271166A6EB2004424C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C8270166A6EB2004424C3 /* main.m */; };
 		FE7C8275166A6EB2004424C3 /* TGWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C8274166A6EB2004424C3 /* TGWAppDelegate.m */; };
 		FE7C827E166A6EB2004424C3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7C827C166A6EB2004424C3 /* MainStoryboard.storyboard */; };
-		FE7C8281166A6EB2004424C3 /* TGWFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C8280166A6EB2004424C3 /* TGWFirstViewController.m */; };
 		FE7C8288166A6EB2004424C3 /* TGWSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C8287166A6EB2004424C3 /* TGWSecondViewController.m */; };
 		FE7C829A166A6F00004424C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7C8293166A6F00004424C3 /* Default-568h@2x.png */; };
 		FE7C829B166A6F00004424C3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7C8294166A6F00004424C3 /* Default.png */; };
@@ -108,8 +107,6 @@
 		FE7C8273166A6EB2004424C3 /* TGWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGWAppDelegate.h; sourceTree = "<group>"; };
 		FE7C8274166A6EB2004424C3 /* TGWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGWAppDelegate.m; sourceTree = "<group>"; };
 		FE7C827D166A6EB2004424C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		FE7C827F166A6EB2004424C3 /* TGWFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGWFirstViewController.h; sourceTree = "<group>"; };
-		FE7C8280166A6EB2004424C3 /* TGWFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGWFirstViewController.m; sourceTree = "<group>"; };
 		FE7C8286166A6EB2004424C3 /* TGWSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGWSecondViewController.h; sourceTree = "<group>"; };
 		FE7C8287166A6EB2004424C3 /* TGWSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGWSecondViewController.m; sourceTree = "<group>"; };
 		FE7C8293166A6F00004424C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -147,8 +144,6 @@
 				EA36D773166AA4FD00D4FA10 /* TimelineViewController.m */,
 				EA36D77C166AC00100D4FA10 /* TGWThirdViewController.h */,
 				EA36D77D166AC00100D4FA10 /* TGWThirdViewController.m */,
-				FE7C827F166A6EB2004424C3 /* TGWFirstViewController.h */,
-				FE7C8280166A6EB2004424C3 /* TGWFirstViewController.m */,
 				FE7C8286166A6EB2004424C3 /* TGWSecondViewController.h */,
 				FE7C8287166A6EB2004424C3 /* TGWSecondViewController.m */,
 			);
@@ -158,10 +153,10 @@
 		FE0DBAB11687A85100334A32 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EA36D769166A82B000D4FA10 /* ToutHashtagService.m */,
-				EA36D768166A82B000D4FA10 /* ToutHashtagService.h */,
 				EA36D77A166AC00100D4FA10 /* TGWPartySpot.h */,
 				EA36D77B166AC00100D4FA10 /* TGWPartySpot.m */,
+				EA36D769166A82B000D4FA10 /* ToutHashtagService.m */,
+				EA36D768166A82B000D4FA10 /* ToutHashtagService.h */,
 				EA36D76C166A8F0600D4FA10 /* Tout.h */,
 				EA36D76D166A8F0600D4FA10 /* Tout.m */,
 				EA36D775166AA7ED00D4FA10 /* ToutHourCell.h */,
@@ -196,12 +191,12 @@
 			path = AFNetworking;
 			sourceTree = SOURCE_ROOT;
 		};
-		FE0DBACF1687A94B00334A32 /* ThirdPartyLib */ = {
+		FE0DBACF1687A94B00334A32 /* ThirdPartyLibs */ = {
 			isa = PBXGroup;
 			children = (
 				FE0DBAB21687A93400334A32 /* AFNetworking */,
 			);
-			name = ThirdPartyLib;
+			name = ThirdPartyLibs;
 			sourceTree = "<group>";
 		};
 		FE7C8255166A6EB2004424C3 = {
@@ -247,7 +242,7 @@
 				EA36D770166AA1D700D4FA10 /* Constants.m */,
 				FE0DBAB01687A76500334A32 /* View Controllers */,
 				FE0DBAB11687A85100334A32 /* Models */,
-				FE0DBACF1687A94B00334A32 /* ThirdPartyLib */,
+				FE0DBACF1687A94B00334A32 /* ThirdPartyLibs */,
 				FE7C827C166A6EB2004424C3 /* MainStoryboard.storyboard */,
 			);
 			path = TGW;
@@ -367,7 +362,6 @@
 				EAF91A35166AC0A000BF686D /* TGWThirdViewController.m in Sources */,
 				FE7C8271166A6EB2004424C3 /* main.m in Sources */,
 				FE7C8275166A6EB2004424C3 /* TGWAppDelegate.m in Sources */,
-				FE7C8281166A6EB2004424C3 /* TGWFirstViewController.m in Sources */,
 				FE7C8288166A6EB2004424C3 /* TGWSecondViewController.m in Sources */,
 				EA36D76A166A82B000D4FA10 /* ToutHashtagService.m in Sources */,
 				EA36D76E166A8F0600D4FA10 /* Tout.m in Sources */,

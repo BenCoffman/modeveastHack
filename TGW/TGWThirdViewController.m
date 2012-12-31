@@ -8,6 +8,7 @@
 
 #import "TGWThirdViewController.h"
 #import "TGWPartySpot.h"
+#import "TimelineViewController.h"
 
 @interface TGWThirdViewController ()
 
@@ -94,7 +95,8 @@ calloutAccessoryControlTapped:(UIControl *)control
     
     if (control == view.rightCalloutAccessoryView)
     {
-        
+        TimelineViewController *tmVC = [[TimelineViewController alloc] init];
+        [self.navigationController pushViewController:tmVC animated:YES];
     }
 }
 

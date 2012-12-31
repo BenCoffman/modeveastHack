@@ -16,10 +16,9 @@
 
 @interface TimelineViewController ()
 
-
 @property(nonatomic,copy) NSArray *touts;
-
 @property(nonatomic,strong) MPMoviePlayerController *movieController;
+
 @end
 
 @implementation TimelineViewController
@@ -40,7 +39,8 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ToutHourCell *cell = (ToutHourCell*)[tableView dequeueReusableCellWithIdentifier:@"HourCell" forIndexPath:indexPath];
+    ToutHourCell *cell = (ToutHourCell*)[tableView dequeueReusableCellWithIdentifier:@"HourCel"];
+    //ToutHourCell *cell = (ToutHourCell*)[tableView dequeueReusableCellWithIdentifier:@"HourCell" forIndexPath:indexPath];
     
     NSDictionary *thisHour = [self.touts objectAtIndex:indexPath.row];
     
@@ -68,7 +68,7 @@
     
     Tout *lastOne = [touts objectAtIndex:0];
 
-    
+
     self.movieController = [[MPMoviePlayerController alloc] initWithContentURL: lastOne.videoURL];
     [self.movieController prepareToPlay];
     [self.movieController.view setFrame: self.view.bounds];  // player's frame must match parent's
